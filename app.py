@@ -4,8 +4,8 @@ from agora_token_builder import RtcTokenBuilder
 
 app = Flask(__name__)
 
-appId = 'a2c04255fbe0486dabf46a35c3c328da'
-appCertificate = 'b3a995f1686a485d95c75c9407d0f2bb'
+appId = '{agora_app_id}'
+appCertificate = '{agora_app_certificate}'
 
 active_channels = {}
 
