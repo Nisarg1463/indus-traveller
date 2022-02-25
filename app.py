@@ -22,7 +22,7 @@ def get_token():
     else:
         active_channels[channel_name] = [uid]
         role = 1
-    privilegeExpiredTs = time.time() + 1
+    privilegeExpiredTs = time.time() + {limit_in_seconds}
     token = RtcTokenBuilder.buildTokenWithUid(
         appId, appCertificate, channel_name, uid, role, privilegeExpiredTs)
     return jsonify({'token': token})
